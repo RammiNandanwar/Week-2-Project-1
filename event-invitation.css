@@ -1,0 +1,134 @@
+body {
+  background: url('background.jpg') no-repeat center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.invitation-container {
+  background-color: #000000c1;
+  padding: 35px;
+  border-radius: 15px;
+  max-width: 600px;
+  box-shadow: 0 0px 100px #350017;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  position: relative;
+  font-family: 'Anton', sans-serif;
+  font-size: 60px;
+  font-weight:450;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  color: #d879a2;
+  text-shadow: 0 0 5px #f4599c,
+              0 0 10px #f4599c,  0 0 20px #000000, 0 0 40px #c176d2bd;
+}
+h2 {
+  position: absolute;
+  font-family: 'Italianno', cursive;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffffed;
+  text-shadow:0 0 5px #eea9c7,0 0 9px #f794bf;
+  font-size: 55px;
+}
+.sub, time{
+ font-size: 25px;
+}
+.sub {
+  font-family: 'montserrat', serif;
+  font-weight: 700;
+  color: #ffffff;
+}
+.information {
+  display: row;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+time {
+  font-family: 'legue', serif;   
+  color: #ffffffee;
+  text-shadow: 0 0 3px #f493bbf8;
+}
+.on,.at,.venue {
+  font-size: 16px;
+  color: #ffffffee;
+  margin-top: 5px;
+}
+.address {
+  font-size: 15px;;
+  color: #ffffffd4;
+}
+.description1 {
+  font-size: 15px;
+  color: #ffffff;
+}
+.description2 {
+  font-size: 28px;
+  color: #ffffff;
+  font-weight: 800;
+  margin-top: 2px;
+  text-shadow: 0 0 5px #facfe4;
+}
+.on,.at,.venue,.address,.description1,.description2{
+  font-family: 'montserrat', serif;
+}
+.rsvp-btn {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #c5447c;
+  color: #facfe4;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #c176d2bd;
+}
+.rsvp-btn:hover {
+  background-color: #f4599c;
+  box-shadow:0 0 30px #f4599c;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+.social-share, .social-share p  {
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: #f5e3ec;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.social-share a {
+  margin: 5px;
+  padding: 8px 12px;
+  color: #ffffffc8;
+  background-color: #c5447c;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #c176d2bd;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  display: inline-block;
+}
+.social-share a:hover {
+  background-color: #f4599c;
+  box-shadow: 0 0 20px #f4599c;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+@media (max-width: 600px) {
+  .event-info {
+    flex-direction: column;
+    text-align: center;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  .invitation-container {
+    padding: 1.5rem;
+  }
+}
